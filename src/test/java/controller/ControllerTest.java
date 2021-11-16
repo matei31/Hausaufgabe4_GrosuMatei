@@ -1,20 +1,21 @@
 package controller;
 
+import controller.Controller;
 import exceptions.ObjectNotFoundException;
 import model.Course;
 import model.Student;
 import model.Teacher;
 import repository.CourseRepo;
 import repository.StudentRepo;
-
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 class ControllerTest {
 
-   /* @Test
+    @Test
     void register() throws ObjectNotFoundException {
         Student s1 = new Student("Ion", "Ionescu", 1234, new ArrayList<>());
         Teacher t1 = new Teacher("Maria", "Pop", new ArrayList<>());
@@ -113,5 +114,5 @@ class ControllerTest {
         Controller control = new Controller(srepo, crepo);
         control.deleteTeacher(c1.getName());
         assertEquals(s1.getEnrolledCourses().size(), 0);
-    }*/
+    }
 }
